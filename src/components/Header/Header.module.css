@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffc107 !important;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}                
+
+.header__title {
+    font-size: 30px;
+    color: white;
+    margin-right: 30px
+} 
+
+@media (max-width: 870px) {
+    .header {
+        padding: 5px 10px
+    }
+
+    .header__title {
+        font-size: 20px;
+        margin-right: 20px
+    } 
+}  
+
+@media (max-width: 410px) {
+    .header {
+        display: block;
+    }
+
+    .header__title {
+        font-size: 15px;
+        margin-right: 20px
+    } 
+} 

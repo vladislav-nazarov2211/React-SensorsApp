@@ -1,0 +1,65 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form {
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(122, 122, 122);
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    text-align: left;
+}
+
+.idError {
+    font-size: 14px;
+    color: #990000;
+    position: absolute;
+    top: 35px
+}
+
+.nameError {
+    font-size: 14px;
+    color: #990000;
+    position: absolute;
+    top: 89px
+}
+
+.temperatureError {
+    font-size: 14px;
+    color: #990000;
+    position: absolute;
+    top: 144px
+}
+
+.humidityError {
+    font-size: 14px;
+    color: #990000;
+    position: absolute;
+    top: 199px
+}
+
+@media (max-width: 625px) {
+    .container {
+        padding: 0 5px
+    }
+}  
+
+@media (max-width: 450px) {
+    .idError {
+        top: 35px
+    }
+    
+    .nameError {
+        top: 109px
+    }
+    
+    .temperatureError {
+        top: 184px
+    }
+    
+    .humidityError {
+        top: 260px
+    }
+}
