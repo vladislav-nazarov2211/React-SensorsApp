@@ -2,13 +2,13 @@ import { createSlice } from '@reduxjs/toolkit'
 import { initialFilterStateType, sensor } from '../../types/types'
 
 
-let sensors = (sessionStorage.getItem("sensors")) // sessionStorage
+let sensors = (sessionStorage.getItem("sensors")) 
 
 const initialState: initialFilterStateType = {
     sensorsArray: (sensors === null ? [] : JSON.parse(sessionStorage.getItem("sensors") || '')), // Проверка на наличие данных в sessionStorage
-    isFetching: false                                                                            // Установка значения на лоадер
+    isFetching: false                                                                            // Установка значения на прелоадер
 }
-
+ы
 const sensorsSlice = createSlice({
     name: 'sensorsSlice',
     initialState,
