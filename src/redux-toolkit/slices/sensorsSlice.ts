@@ -6,7 +6,7 @@ let sensors = (sessionStorage.getItem("sensors"))
 
 const initialState: initialFilterStateType = {
     sensorsArray: (sensors === null ? [] : JSON.parse(sessionStorage.getItem("sensors") || '')), // Проверка на наличие данных в sessionStorage
-    isFetching: false                                                                            // Установка значения на прелоадер
+    isFetching: false                                                                            // Установка значения на лоадер
 }
 
 const sensorsSlice = createSlice({
