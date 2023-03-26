@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit'
 import { initialFilterStateType, sensor } from '../../types/types'
 
 
-let sensors = (sessionStorage.getItem("sensors"))
+let sensors = (sessionStorage.getItem("sensors")) // sessionStorage
 
 const initialState: initialFilterStateType = {
     sensorsArray: (sensors === null ? [] : JSON.parse(sessionStorage.getItem("sensors") || '')), // Проверка на наличие данных в sessionStorage
